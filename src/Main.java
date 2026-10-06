@@ -1,9 +1,12 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+        Scanner sc = new Scanner(System.in);
+        int numero, resultado;
+        System.out.println("Teclea un número y yo te mostraré su cuadrado");
+        numero = sc.nextInt();
+        resultado = funcion(numero);
+        System.out.println("El cuadrado de " + numero + " es " + resultado);
     }
 }
